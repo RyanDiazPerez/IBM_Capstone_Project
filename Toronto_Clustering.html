@@ -13090,12 +13090,189 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>conda install lxml --yes
+<span class="o">!</span>conda install html5lib --yes
+<span class="o">!</span>conda install -c conda-forge beautifulsoup4 --yes
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Solving environment: done
+
+
+==&gt; WARNING: A newer version of conda exists. &lt;==
+  current version: 4.5.11
+  latest version: 4.8.0
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: /home/jupyterlab/conda/envs/python
+
+  added / updated specs: 
+    - lxml
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    lxml-4.3.0                 |   py36hefd8a0e_0         1.5 MB
+    certifi-2019.11.28         |           py36_0         156 KB
+    openssl-1.1.1d             |       h7b6447c_3         3.7 MB
+    ------------------------------------------------------------
+                                           Total:         5.4 MB
+
+The following packages will be UPDATED:
+
+    certifi: 2019.9.11-py36_0     conda-forge --&gt; 2019.11.28-py36_0   
+    lxml:    4.2.5-py37hefd8a0e_0             --&gt; 4.3.0-py36hefd8a0e_0
+    openssl: 1.1.1d-h516909a_0    conda-forge --&gt; 1.1.1d-h7b6447c_3   
+
+
+Downloading and Extracting Packages
+lxml-4.3.0           | 1.5 MB    | ##################################### | 100% 
+certifi-2019.11.28   | 156 KB    | ##################################### | 100% 
+openssl-1.1.1d       | 3.7 MB    | ##################################### | 100% 
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+Solving environment: / 
+Warning: 2 possible package resolutions (only showing differing packages):
+  - conda-forge::html5lib-0.9999999-py36_0
+  - defaults::html5lib-0.9999999-py36done
+
+
+==&gt; WARNING: A newer version of conda exists. &lt;==
+  current version: 4.5.11
+  latest version: 4.8.0
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+# All requested packages already installed.
+
+Solving environment: done
+
+
+==&gt; WARNING: A newer version of conda exists. &lt;==
+  current version: 4.5.11
+  latest version: 4.8.0
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: /home/jupyterlab/conda/envs/python
+
+  added / updated specs: 
+    - beautifulsoup4
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    certifi-2019.11.28         |           py36_0         149 KB  conda-forge
+    scikit-learn-0.20.1        |   py36h22eb022_0         5.7 MB
+    liblapack-3.8.0            |      11_openblas          10 KB  conda-forge
+    liblapacke-3.8.0           |      11_openblas          10 KB  conda-forge
+    libopenblas-0.3.6          |       h5a2b251_2         7.7 MB
+    numpy-1.17.3               |   py36h95a1406_0         5.2 MB  conda-forge
+    scipy-1.4.1                |   py36h921218d_0        18.9 MB  conda-forge
+    beautifulsoup4-4.8.2       |           py36_0         157 KB  conda-forge
+    libcblas-3.8.0             |      11_openblas          10 KB  conda-forge
+    libblas-3.8.0              |      11_openblas          10 KB  conda-forge
+    soupsieve-1.9.4            |           py36_0          58 KB  conda-forge
+    blas-2.11                  |         openblas          10 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:        37.9 MB
+
+The following NEW packages will be INSTALLED:
+
+    libblas:        3.8.0-11_openblas                      conda-forge
+    libcblas:       3.8.0-11_openblas                      conda-forge
+    liblapack:      3.8.0-11_openblas                      conda-forge
+    liblapacke:     3.8.0-11_openblas                      conda-forge
+    libopenblas:    0.3.6-h5a2b251_2                                  
+    soupsieve:      1.9.4-py36_0                           conda-forge
+
+The following packages will be UPDATED:
+
+    beautifulsoup4: 4.6.3-py37_0                                       --&gt; 4.8.2-py36_0          conda-forge
+    blas:           1.1-openblas                           conda-forge --&gt; 2.11-openblas         conda-forge
+    certifi:        2019.11.28-py36_0                                  --&gt; 2019.11.28-py36_0     conda-forge
+    numpy:          1.16.2-py36_blas_openblash1522bff_0    conda-forge [blas_openblas] --&gt; 1.17.3-py36h95a1406_0 conda-forge
+    scipy:          1.2.1-py36_blas_openblash1522bff_0     conda-forge [blas_openblas] --&gt; 1.4.1-py36h921218d_0  conda-forge
+
+The following packages will be DOWNGRADED:
+
+    openssl:        1.1.1d-h7b6447c_3                                  --&gt; 1.1.1d-h516909a_0     conda-forge
+    scikit-learn:   0.20.1-py36_blas_openblashebff5e3_1200 conda-forge [blas_openblas] --&gt; 0.20.1-py36h22eb022_0            
+
+
+Downloading and Extracting Packages
+certifi-2019.11.28   | 149 KB    | ##################################### | 100% 
+scikit-learn-0.20.1  | 5.7 MB    | ##################################### | 100% 
+liblapack-3.8.0      | 10 KB     | ##################################### | 100% 
+liblapacke-3.8.0     | 10 KB     | ##################################### | 100% 
+libopenblas-0.3.6    | 7.7 MB    | ##################################### | 100% 
+numpy-1.17.3         | 5.2 MB    | ##################################### | 100% 
+scipy-1.4.1          | 18.9 MB   | ##################################### | 100% 
+beautifulsoup4-4.8.2 | 157 KB    | ##################################### | 100% 
+libcblas-3.8.0       | 10 KB     | ##################################### | 100% 
+libblas-3.8.0        | 10 KB     | ##################################### | 100% 
+soupsieve-1.9.4      | 58 KB     | ##################################### | 100% 
+blas-2.11            | 10 KB     | ##################################### | 100% 
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> <span class="c1"># library to handle data in a vectorized manner</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span> <span class="c1"># library for data analsysis</span>
 <span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="k">import</span> <span class="n">KMeans</span> <span class="c1"># import k-means from clustering stage</span>
+<span class="kn">import</span> <span class="nn">html5lib</span>
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="k">import</span> <span class="n">BeautifulSoup</span>
+<span class="kn">import</span> <span class="nn">lxml</span>
 </pre></div>
 
     </div>
@@ -13112,10 +13289,11 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_toronto</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_html</span><span class="p">(</span><span class="s2">&quot;https://en.wikipedia.org/wiki/List_of_postal_codes_of_Canada:_M&quot;</span><span class="p">,</span> <span class="n">flavor</span><span class="o">=</span><span class="s2">&quot;html5lib&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;http://en.wikipedia.org/wiki/List_of_postal_codes_of_Canada:_M&quot;</span>
+<span class="n">df_toronto</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_html</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">flavor</span><span class="o">=</span><span class="s1">&#39;html5lib&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
 
 <span class="c1"># Removing rows with Borough value of Not assigned</span>
 <span class="n">df_toronto</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">df_toronto</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="n">df_toronto</span><span class="p">[</span><span class="s1">&#39;Borough&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Not assigned&#39;</span><span class="p">],</span> <span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
@@ -13132,7 +13310,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[15]:</div>
+    <div class="prompt output_prompt">Out[3]:</div>
 
 
 
@@ -13204,7 +13382,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Combining rows</span>
@@ -13223,7 +13401,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[16]:</div>
+    <div class="prompt output_prompt">Out[4]:</div>
 
 
 
@@ -13332,7 +13510,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_toronto</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df_toronto</span><span class="p">[</span><span class="s1">&#39;Neighbourhood&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="p">(</span><span class="s1">&#39;Not assigned&#39;</span><span class="p">),</span> <span class="s1">&#39;Neighbourhood&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_toronto</span><span class="p">[</span><span class="s1">&#39;Borough&#39;</span><span class="p">]</span>
@@ -13349,7 +13527,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[17]:</div>
+    <div class="prompt output_prompt">Out[5]:</div>
 
 
 
@@ -13458,7 +13636,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_toronto</span><span class="o">.</span><span class="n">shape</span>
@@ -13474,7 +13652,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[18]:</div>
+    <div class="prompt output_prompt">Out[6]:</div>
 
 
 
@@ -13498,39 +13676,283 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Latitude and Longitude of the neighborhoods</span>
+<span class="n">df_geography</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;Geospatial_Coordinates.csv&#39;</span><span class="p">)</span>
+<span class="n">df_geography</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[25]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Postal Code</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>M1B</td>
+      <td>43.806686</td>
+      <td>-79.194353</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>M1C</td>
+      <td>43.784535</td>
+      <td>-79.160497</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>M1E</td>
+      <td>43.763573</td>
+      <td>-79.188711</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>M1G</td>
+      <td>43.770992</td>
+      <td>-79.216917</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>M1H</td>
+      <td>43.773136</td>
+      <td>-79.239476</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Renaming colunm from Postal Code to Postcode</span>
+<span class="n">df_geography</span><span class="o">.</span><span class="n">rename</span><span class="p">({</span><span class="s1">&#39;Postal Code&#39;</span><span class="p">:</span> <span class="s1">&#39;Postcode&#39;</span><span class="p">},</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">df_geography</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[26]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Postcode</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>M1B</td>
+      <td>43.806686</td>
+      <td>-79.194353</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>M1C</td>
+      <td>43.784535</td>
+      <td>-79.160497</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>M1E</td>
+      <td>43.763573</td>
+      <td>-79.188711</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>M1G</td>
+      <td>43.770992</td>
+      <td>-79.216917</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>M1H</td>
+      <td>43.773136</td>
+      <td>-79.239476</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Merging df_toronto and df_geography</span>
+<span class="n">df_merged</span> <span class="o">=</span> <span class="n">df_toronto</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df_geography</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;Postcode&#39;</span><span class="p">)</span>
+<span class="n">df_merged</span><span class="o">.</span><span class="n">rename</span><span class="p">({</span><span class="s1">&#39;Postcode&#39;</span><span class="p">:</span> <span class="s1">&#39;PostalCode&#39;</span><span class="p">},</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">df_merged</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[27]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PostalCode</th>
+      <th>Borough</th>
+      <th>Neighbourhood</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>M1B</td>
+      <td>Scarborough</td>
+      <td>Rouge,Malvern</td>
+      <td>43.806686</td>
+      <td>-79.194353</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>M1C</td>
+      <td>Scarborough</td>
+      <td>Highland Creek,Rouge Hill,Port Union</td>
+      <td>43.784535</td>
+      <td>-79.160497</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>M1E</td>
+      <td>Scarborough</td>
+      <td>Guildwood,Morningside,West Hill</td>
+      <td>43.763573</td>
+      <td>-79.188711</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>M1G</td>
+      <td>Scarborough</td>
+      <td>Woburn</td>
+      <td>43.770992</td>
+      <td>-79.216917</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>M1H</td>
+      <td>Scarborough</td>
+      <td>Cedarbrae</td>
+      <td>43.773136</td>
+      <td>-79.239476</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
